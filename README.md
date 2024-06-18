@@ -21,4 +21,4 @@ Configuration
 
 Usage
 
-/testrestart to test the warning
+- /testrestart to test the warning

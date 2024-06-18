@@ -10,6 +10,7 @@ Prerequisites
 
 - A FiveM server.
 - TxAdmin
+
 Installation
 
 - Download and extract the folder d3server_restart to your FiveM resources directory.

@@ -2,12 +2,14 @@ A simple server restarter warning script.
 
 Features
 
+- Synced with TxAdmin by default
 - Fully customizable
+- Auto hides after 10 seconds
 
 Prerequisites
 
 - A FiveM server.
-
+- TxAdmin
 Installation
 
 - Download and extract the folder d3server_restart to your FiveM resources directory.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restart Notification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+            overflow: hidden; /* Hide overflow for smoother animation */
+        }
+        .notification {
+            position: absolute;
+            left: -300px; /* Start off-screen */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%);
+            background: rgb(255, 0, 0);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px; /* Adjust width as needed */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+        .notification.show {
+            left: 20px; /* Slide in from the left */
+            opacity: 1;
+        }
+        .notification.hide {
+            left: -300px; /* Slide out to the left */
+            opacity: 0;
+        }
+        .notification h1 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+        .notification p {
+            font-size: 18px;
+            margin: 10px 0 0;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="notification">
+        <h1>SERVER RESTART!</h1>
+        <p id="time">Time remaining: 0 seconds</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

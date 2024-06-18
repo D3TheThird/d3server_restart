@@ -1,4 +1,5 @@
 A simple server restarter warning script.
+
 Features
 
 - Fully customizable

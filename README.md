@@ -1,5 +1,3 @@
-Simple server restart warning
-
 A simple server restarter warning script.
 Features
 
